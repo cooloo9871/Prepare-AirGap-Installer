@@ -367,7 +367,7 @@ prepare_neuvector() {
   done
 
   # save images to tar.gz
-  sudo docker save $(cat images-list.txt) | gzip --stdout > neuvector-images-"${Neuvector_Version}".tar.gz &>> "${Command_Output_log_file}"
+  sudo docker save $(cat images-list.txt) | gzip --stdout > neuvector-images-"${Neuvector_Version}".tar.gz
   [[ "$?" != "0" ]] && echo "Docker save Neuvector images ${Neuvector_Version} failed" && exit 1
 
   cd ../..; tar -czf compressed_files/neuvector-airgap-"${Neuvector_Version}".tar.gz neuvector/"${Neuvector_Version}"
