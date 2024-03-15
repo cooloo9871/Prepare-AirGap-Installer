@@ -37,6 +37,27 @@ chmod +x *.sh
 ./podman-prepare.sh harbor rke2 k3s neuvector
 ```
 
+螢幕輸出 : 
+
+```
+Prepare Harbor v2.10.0 OK.
+Prepare RKE2 v1.27.11 OK.
+Prepare K3S v1.27.11 OK.
+Prepare Neuvector 5.3.0 OK.
+```
+
+檢查全離線安裝包
+
+```
+$ ls -lh ~/work/compressed_files/
+total 1.9G
+-rw-r--r-- 1 bigred bigred 630M Mar 15 15:15 harbor-offline-v2.10.0.tar.gz
+-rw-r--r-- 1 bigred bigred 192M Mar 15 15:17 k3s-airgap-v1.27.11.tar.gz
+-rw-r--r-- 1 bigred bigred  91M Mar 15 15:18 neuvector-airgap-5.3.0.tar.gz
+-rw-r--r-- 1 bigred bigred 956M Mar 15 15:17 rke2-airgap-v1.27.11.tar.gz
+```
+
+
 ## Usage
 
 ```
