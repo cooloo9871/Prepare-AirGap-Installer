@@ -152,7 +152,6 @@ Environment variables:
 │   └── rke2-airgap-v1.27.11.tar.gz     --> RKE2 v1.27.11 版本的全離線安裝包
 ├── harbor
 │   ├── v2.10.0
-│   └── v2.7.0
 ├── k3s
 │   └── v1.27.11
 ├── neuvector
