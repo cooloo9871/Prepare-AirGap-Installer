@@ -3,7 +3,7 @@
 ## 描述
 
 可自動化準備指定的產品及對應的版本，包含 Harbor、Rancher Kubernetes Engine 2 ( RKE2 )、Rancher、Neuvector 和 K3S 全離線安裝所需的檔案和 Container Images。
-全離線安裝所需的檔案和 Container Images 會被壓縮成一個壓縮檔，並儲存在 `~/work/compressed_files` 目錄底下
+全離線安裝所需的檔案和 Container Images 會被壓縮成一個壓縮檔，並儲存在 `~/work/compressed_files` 目錄底下。
 
 ## Usage
 
@@ -109,3 +109,18 @@ Environment variables:
 └── rke2
     └── v1.27.11
 ```
+
+## Log
+### 檢視程式執行了哪些命令
+
+```
+$ tail -f /tmp/prepare_message.log
+```
+
+### 檢視程式執行的執行結果
+
+```
+$ tail -f /tmp/prepare_output_message.log
+```
+
+
