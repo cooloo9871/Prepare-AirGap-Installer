@@ -5,6 +5,22 @@
 可自動化準備指定的產品及對應的版本，包含 Harbor、Rancher Kubernetes Engine 2 ( RKE2 )、Rancher、Neuvector 和 K3S 全離線安裝所需的檔案和 Container Images。
 全離線安裝所需的檔案和 Container Images 會被壓縮成一個壓縮檔，並儲存在 `~/work/compressed_files` 目錄底下。
 
+## Quick Start
+
+### Download Git Repo
+
+```
+git clone https://github.com/braveantony/Prepare-AirGap-Installer.git && \
+cd Prepare-AirGap-Installer/ && \
+chmod +x *.sh
+```
+
+### 開始執行
+
+```
+./podman-prepare.sh harbor rke2 k3s neuvector
+```
+
 ## Usage
 
 ```
@@ -70,22 +86,22 @@ Environment variables:
 ## Example:
   ### 一次準備 Harbor、RKE2、Rancher 的全離線安裝包，並且指定安裝 Harbor 特定版本
   ```
-  Harbor_Version=v2.7.0 ./prepare.sh all
+  Harbor_Version=v2.7.0 ./podman-prepare.sh all
   ```
   ### 只準備 Rancher 的全離線安裝包，並且指定安裝 Rancher v2.7.9 版本
   ```
-  Rancher_Version=v2.7.9 ./prepare.sh rancher
+  Rancher_Version=v2.7.9 ./podman-prepare.sh rancher
   ```
   ### 準備 Neuvector 的全離線安裝包，並且指定安裝 Neuvector 5.2.0 版本
   ```
-  Neuvector_Version=5.2.0 ./prepare.sh neuvector
+  Neuvector_Version=5.2.0 ../podman-prepare.sh neuvector
   ```
 
   ### 同時準備 Rancher、Harbor 和 K3S 的全離線安裝包，分別指定安裝 v2.7.9、v2.7.0 和 v1.25.9 版本，並設定私有 Image Registry 的名稱
   ```
   Rancher_Version=v2.7.9 Harbor_Version=v2.7.0 K3S_Version=v1.25.9 \
   Private_Registry_Name="antony-harbor.example.com" \
-  ./prepare.sh rancher harbor k3s
+  ./podman-prepare.sh rancher harbor k3s
   ```
 
 ## 範例目錄結構
