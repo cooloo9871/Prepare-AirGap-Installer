@@ -112,7 +112,7 @@ Environment variables:
      預設是 'harbor.example.com'。
 
    - Command_log_file
-     將命令執行後的輸出重新導向到 /tmp/prepare_message.log
+     將執行的命令重新導向到 /tmp/prepare_message.log
      預設是 '/tmp/prepare_message.log'。
 
    - Command_Output_log_file
