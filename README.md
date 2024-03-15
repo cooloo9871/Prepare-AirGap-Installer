@@ -117,7 +117,7 @@ Environment variables:
 $ tail -f /tmp/prepare_message.log
 ```
 
-### 檢視程式執行的執行結果
+### 檢視程式執行命令的執行結果
 
 ```
 $ tail -f /tmp/prepare_output_message.log
