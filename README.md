@@ -26,7 +26,7 @@
 ### Download Git Repo
 
 ```
-git clone https://github.com/braveantony/Prepare-AirGap-Installer.git && \
+git clone https://github.com/cooloo9871/Prepare-AirGap-Installer.git  && \
 cd Prepare-AirGap-Installer/ && \
 chmod +x *.sh
 ```
