@@ -1,5 +1,5 @@
 # 自動化準備全離線安裝包
-a
+
 ## 描述
 
 可自動化準備指定的產品及對應的版本，包含 Harbor、Rancher Kubernetes Engine 2 ( RKE2 )、Rancher、Neuvector 和 K3S 全離線安裝所需的檔案和 Container Images。
